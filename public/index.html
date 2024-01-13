@@ -19,75 +19,213 @@
     rel="stylesheet">
 </head>
 
-<body class="font-fira">
-  <nav class="px-4 flex justify-center h-12 md:h-16 bg-zinc-900">
-    <div class="flex justify-center h-full container">
-      <div class="flex gap-2 md:gap-4 h-full">
-        <a href="#"
-          class="text-sm md:text-base lg:text-xl font-medium text-gray-400 uppercase inline-flex border-y-4 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 active:text-lime-400 active:border-b-lime-400">Home</a>
-        <a href="#"
-          class="text-sm md:text-base lg:text-xl font-medium text-gray-400 uppercase inline-flex border-y-4 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 active:text-lime-400 active:border-b-lime-400">About</a>
-        <a href="#"
-          class="text-sm md:text-base lg:text-xl font-medium text-gray-400 uppercase inline-flex border-y-4 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 active:text-lime-400 active:border-b-lime-400">Portfolio</a>
-        <a href="#"
-          class="text-sm md:text-base lg:text-xl font-medium text-gray-400 uppercase inline-flex border-y-4 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 active:text-lime-400 active:border-b-lime-400">Service</a>
-        <a href="#"
-          class="text-sm md:text-base lg:text-xl font-medium text-gray-400 uppercase inline-flex border-y-4 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 active:text-lime-400 active:border-b-lime-400">Contact</a>
-      </div>
-    </div>
-  </nav>
-  <div class="px-4 lg:px-12 py-4 bg-zinc-900">
-    <div class="container flex gap-12 lg:gap-24 flex-col lg:flex-row mx-auto items-center">
-      <div class="flex gap-2 flex-col items-center lg:items-start">
-        <h3 class="uppercase text-base md:text-2xl text-white"><span class="text-lime-400">HELLO</span>, I AM</h3>
-        <h2 class="text-2xl md:text-5xl text-white">Iqbal Pamula</h2>
-        <h3 class="uppercase text-base md:text-2xl text-white mt-2">Lorem ipsum dolor sit.</h3>
-        <h4 class="text-sm md:text-xl text-white text-center lg:text-left my-2">Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Eius assumenda ipsum ad provident ratione, eaque iusto possimus. Dolores repellendus libero
-          possimus in accusantium quia.</h4>
-        <button
-          class="px-8 py-2 text-base md:text-lg font-bold bg-lime-400 text-zinc-900 rounded-full mt-4 focus:bg-lime-600">Hire
-          Me</button>
-      </div>
-      <img src="./assets/image/iqbal.png" alt="iqbal"
-        class="rounded-full bg-lime-400 w-1/2 h-1/2 mx-auto outline outline-4 outline-offset-4 outline-lime-400">
-    </div>
-  </div>
-  <div class="px-4 lg:px-12 py-4 bg-zinc-900">
-    <div class="container flex gap-12 md:gap-32 flex-col md:flex-row mx-auto items-center justify-center">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center w-full h-[902px] md:h-[451px] lg:h-80">
-        <div
-          class="rounded-t-xl md:rounded-tl-xl md:rounded-tr-none lg:rounded-l-xl lg:rounded-tr-none bg-white h-[225.5px] w-full lg:h-full hover:bg-lime-400">
-          <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
-            <h1 class="text-6xl font-extrabold">01</h1>
-            <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
-          </div>
-        </div>
-        <div
-          class="rounded-none md:rounded-tr-xl lg:rounded-none bg-white h-[225.5px] w-full lg:h-full hover:bg-lime-400">
-          <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
-            <h1 class="text-6xl font-extrabold">02</h1>
-            <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
-          </div>
-        </div>
-        <div
-          class="rounded-none md:rounded-bl-xl lg:rounded-none bg-white h-[225.5px] w-full lg:h-full hover:bg-lime-400">
-          <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
-            <h1 class="text-6xl font-extrabold">03</h1>
-            <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
-          </div>
-        </div>
-        <div
-          class="rounded-b-xl md:rounded-br-xl md:rounded-bl-none lg:rounded-r-xl bg-white h-[225.5px] w-full lg:h-full hover:bg-lime-400">
-          <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
-            <h1 class="text-6xl font-extrabold">04</h1>
-            <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
-          </div>
+<body class="font-fira scroll-smooth bg-zinc-900">
+  <header class="sticky top-0 bg-zinc-900 py-8">
+    <nav class="px-4 flex justify-center h-8 md:h-10 lg:h-12">
+      <div class="flex justify-center h-full container">
+        <div class="flex gap-2 md:gap-4 h-full">
+          <a href="#"
+            class="px-0 md:px-2 text-sm md:text-base lg:text-xl text-gray-400 uppercase inline-flex border-y-2 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 focus:border-b-lime-400 active:text-lime-400 active:border-b-lime-400">Home</a>
+          <a href="#"
+            class="px-0 md:px-2 text-sm md:text-base lg:text-xl text-gray-400 uppercase inline-flex border-y-2 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 focus:border-b-lime-400 active:text-lime-400 active:border-b-lime-400">About</a>
+          <a href="#"
+            class="px-0 md:px-2 text-sm md:text-base lg:text-xl text-gray-400 uppercase inline-flex border-y-2 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 focus:border-b-lime-400 active:text-lime-400 active:border-b-lime-400">Portfolio</a>
+          <a href="#"
+            class="px-0 md:px-2 text-sm md:text-base lg:text-xl text-gray-400 uppercase inline-flex border-y-2 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 focus:border-b-lime-400 active:text-lime-400 active:border-b-lime-400">Service</a>
+          <a href="#"
+            class="px-0 md:px-2 text-sm md:text-base lg:text-xl text-gray-400 uppercase inline-flex border-y-2 border-transparent items-center leading-none hover:text-lime-400 hover:border-b-lime-400 focus:text-lime-400 focus:border-b-lime-400 active:text-lime-400 active:border-b-lime-400">Contact</a>
         </div>
       </div>
+    </nav>
+  </header>
+  <main>
+    <div class="px-4 lg:px-12 py-4 lg:py-24">
+      <div class="container flex gap-12 lg:gap-24 flex-col lg:flex-row mx-auto items-center">
+        <div class="flex gap-2 flex-col items-center lg:items-start">
+          <h3 class="uppercase text-base md:text-2xl text-white"><span class="text-lime-400">HELLO</span>, I AM</h3>
+          <h2 class="text-2xl md:text-5xl text-white">Iqbal Pamula</h2>
+          <h3 class="uppercase text-base md:text-2xl text-white mt-2">Lorem ipsum dolor sit.</h3>
+          <h4 class="text-sm md:text-xl text-white text-center lg:text-left my-2">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eius assumenda ipsum ad provident ratione, eaque iusto possimus. Dolores repellendus
+            libero
+            possimus in accusantium quia.</h4>
+          <button
+            class="px-8 py-2 text-base md:text-lg font-bold bg-lime-400 text-zinc-900 rounded-full mt-4 focus:bg-lime-600">Hire
+            Me</button>
+        </div>
+        <img src="./assets/image/iqbal.png" alt="iqbal"
+          class="rounded-full bg-lime-400 w-1/2 h-auto md:w-3/8 md:h-auto mx-auto outline outline-4 outline-offset-4 outline-lime-400">
+      </div>
     </div>
-  </div>
-
+    <div class="px-4 lg:px-12 py-4 lg:py-24">
+      <div class="container flex gap-12 md:gap-32 flex-col md:flex-row mx-auto items-center justify-center">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center w-full h-[902px] md:h-[451px] lg:h-80 bg-white rounded-xl">
+          <div
+            class="rounded-t-xl md:rounded-tl-xl md:rounded-tr-none lg:rounded-l-xl lg:rounded-tr-none h-[225.5px] w-full lg:h-full hover:bg-lime-400 focus:bg-lime-400">
+            <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
+              <h1 class="text-6xl font-extrabold">01</h1>
+              <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
+            </div>
+          </div>
+          <div
+            class="rounded-none md:rounded-tr-xl lg:rounded-none h-[225.5px] w-full lg:h-full hover:bg-lime-400 focus:bg-lime-400">
+            <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
+              <h1 class="text-6xl font-extrabold">02</h1>
+              <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
+            </div>
+          </div>
+          <div
+            class="rounded-none md:rounded-bl-xl lg:rounded-none h-[225.5px] w-full lg:h-full hover:bg-lime-400 focus:bg-lime-400">
+            <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
+              <h1 class="text-6xl font-extrabold">03</h1>
+              <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
+            </div>
+          </div>
+          <div
+            class="rounded-b-xl md:rounded-br-xl md:rounded-bl-none lg:rounded-r-xl h-[225.5px] w-full lg:h-full hover:bg-lime-400 focus:bg-lime-400">
+            <div class="flex flex-col h-full px-4 justify-center items-center gap-2">
+              <h1 class="text-6xl font-extrabold">04</h1>
+              <h2 class="text-lg font-medium text-center">Lorem ipsum dolor sit.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 lg:px-12 py-4 lg:py-24">
+      <div class="container flex flex-col gap-8 md:gap-12 lg:gap-24 mx-auto items-center">
+        <h1 class="text-4xl text-white">Lorem ipsum.</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mx-auto justify-center">
+          <div class="flex flex-col gap-4 items-center px-4">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-2/6 h-auto rounded-full">
+            <h2 class="text-2xl text-white text-center">Lorem ipsum.</h2>
+            <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium odit cupiditate fugit nulla, laboriosam distinctio explicabo id exercitationem soluta veniam?
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 items-center px-4">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-2/6 h-auto rounded-full">
+            <h2 class="text-2xl text-white text-center">Lorem ipsum.</h2>
+            <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium odit cupiditate fugit nulla, laboriosam distinctio explicabo id exercitationem soluta veniam?
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 items-center px-4">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-2/6 h-auto rounded-full">
+            <h2 class="text-2xl text-white text-center">Lorem ipsum.</h2>
+            <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium odit cupiditate fugit nulla, laboriosam distinctio explicabo id exercitationem soluta veniam?
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 items-center px-4">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-2/6 h-auto rounded-full">
+            <h2 class="text-2xl text-white text-center">Lorem ipsum.</h2>
+            <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium odit cupiditate fugit nulla, laboriosam distinctio explicabo id exercitationem soluta veniam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 lg:px-12 py-4 lg:py-24">
+      <div class="container flex flex-col gap-8 md:gap-12 lg:gap-24 mx-auto items-center">
+        <h1 class="text-4xl text-white">Lorem ipsum.</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12 mx-auto justify-center">
+          <div class="flex flex-row gap-4 p-4 bg-zinc-800 shadow-sm shadow-zinc-950 rounded-sm items-start">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-1/12 h-auto rounded-full">
+            <div class="flex flex-col gap-2">
+              <h2 class="text-white text-lg">Lorem ipsum dolor sit.</h2>
+              <h3 class="text-white text-sm font-medium">Lorem, ipsum dolor.</h3>
+              <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                inventore.
+                Iure neque nemo rerum necessitatibus optio assumenda commodi veniam quas.</p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 p-4 bg-zinc-800 shadow-sm shadow-zinc-950 rounded-sm items-start">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-1/12 h-auto rounded-full">
+            <div class="flex flex-col gap-2">
+              <h2 class="text-white text-lg">Lorem ipsum dolor sit.</h2>
+              <h3 class="text-white text-sm font-medium">Lorem, ipsum dolor.</h3>
+              <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                inventore.
+                Iure neque nemo rerum necessitatibus optio assumenda commodi veniam quas.</p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 p-4 bg-zinc-800 shadow-sm shadow-zinc-950 rounded-sm items-start">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-1/12 h-auto rounded-full">
+            <div class="flex flex-col gap-2">
+              <h2 class="text-white text-lg">Lorem ipsum dolor sit.</h2>
+              <h3 class="text-white text-sm font-medium">Lorem, ipsum dolor.</h3>
+              <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                inventore.
+                Iure neque nemo rerum necessitatibus optio assumenda commodi veniam quas.</p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 p-4 bg-zinc-800 shadow-sm shadow-zinc-950 rounded-sm items-start">
+            <img src="./assets/image/vercel.png" alt="vercel" class="w-1/12 h-auto rounded-full">
+            <div class="flex flex-col gap-2">
+              <h2 class="text-white text-lg">Lorem ipsum dolor sit.</h2>
+              <h3 class="text-white text-sm font-medium">Lorem, ipsum dolor.</h3>
+              <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                inventore.
+                Iure neque nemo rerum necessitatibus optio assumenda commodi veniam quas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 lg:px-12 py-4 lg:py-24 bg-white">
+      <div class="container flex flex-col gap-8 md:gap-12 lg:gap-24 mx-auto items-center">
+        <h1 class="text-4xl text-zinc-900">Lorem ipsum.</h1>
+        <div class="flex justify-between w-full">
+          <div class="flex flex-row gap-6">
+            <a href="#"
+              class="px-4 py-2 bg-transparent text-zinc-900 border-2 border-zinc-900 rounded-full font-medium text-lg hover:bg-lime-400 hover:border-2 hover:border-lime-400 transition-colors duration-200">
+              Lorem
+            </a>
+            <a href="#"
+              class="px-4 py-2 bg-transparent text-zinc-900 border-2 border-zinc-900 rounded-full font-medium text-lg hover:bg-lime-400 hover:border-2 hover:border-lime-400 transition-colors duration-200">
+              Lorem
+            </a>
+            <a href="#"
+              class="px-4 py-2 bg-transparent text-zinc-900 border-2 border-zinc-900 rounded-full font-medium text-lg hover:bg-lime-400 hover:border-2 hover:border-lime-400 transition-colors duration-200">
+              Lorem
+            </a>
+            <a href="#"
+              class="px-4 py-2 bg-transparent text-zinc-900 border-2 border-zinc-900 rounded-full font-medium text-lg hover:bg-lime-400 hover:border-2 hover:border-lime-400 transition-colors duration-200">
+              Lorem
+            </a>
+          </div>
+          <div class="flex flex-row gap-8">
+            <a href="#"
+              class="px-3 bg-transparent border-2 border-transparent rounded-full flex items-center bg-zinc-900 hover:bg-lime-400 text-white hover:text-zinc-900 transition-colors duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd"
+                  d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#"
+              class="px-3 bg-transparent border-2 border-transparent rounded-full flex items-center bg-zinc-900 hover:bg-lime-400 text-white hover:text-zinc-900 transition-colors duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <img src="./assets/image/vercel.png">
+          <img src="./assets/image/vercel.png">
+          <img src="./assets/image/vercel.png">
+          <img src="./assets/image/vercel.png">
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
 </body>
 
 </html>
